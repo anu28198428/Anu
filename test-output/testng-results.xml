@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-05-31T17:03:28Z" name="Suite" finished-at="2019-05-31T17:04:08Z" duration-ms="40581">
+    <groups>
+    </groups>
+    <test started-at="2019-05-31T17:03:28Z" name="validating navigation bar" finished-at="2019-05-31T17:03:39Z" duration-ms="11245">
+      <class name="Com.automationtest.validateNavigationbar">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Com.automationtest.validateNavigationbar@6187d1f5]" started-at="2019-05-31T10:03:28Z" name="initialize" finished-at="2019-05-31T10:03:37Z" duration-ms="8833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basepageNavigation()[pri:0, instance:Com.automationtest.validateNavigationbar@6187d1f5]" started-at="2019-05-31T10:03:37Z" name="basepageNavigation" finished-at="2019-05-31T10:03:37Z" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepageNavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Com.automationtest.validateNavigationbar@6187d1f5]" started-at="2019-05-31T10:03:37Z" name="teardown" finished-at="2019-05-31T10:03:39Z" duration-ms="2371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Com.automationtest.validateNavigationbar -->
+    </test> <!-- validating navigation bar -->
+    <test started-at="2019-05-31T17:03:39Z" name="validating Homepage" finished-at="2019-05-31T17:03:57Z" duration-ms="17730">
+      <class name="Com.automationtest.Homepage">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Com.automationtest.Homepage@495fac5f]" started-at="2019-05-31T10:03:39Z" name="initialize" finished-at="2019-05-31T10:03:41Z" duration-ms="2098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basepageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Com.automationtest.Homepage@495fac5f]" started-at="2019-05-31T10:03:41Z" name="basepageNavigation" data-provider="getData" finished-at="2019-05-31T10:03:52Z" duration-ms="10843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricteduser@w.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepageNavigation -->
+        <test-method signature="basepageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Com.automationtest.Homepage@495fac5f]" started-at="2019-05-31T10:03:52Z" name="basepageNavigation" data-provider="getData" finished-at="2019-05-31T10:03:56Z" duration-ms="4384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricted@q.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5346]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepageNavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Com.automationtest.Homepage@495fac5f]" started-at="2019-05-31T10:03:56Z" name="teardown" finished-at="2019-05-31T10:03:57Z" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Com.automationtest.Homepage -->
+    </test> <!-- validating Homepage -->
+    <test started-at="2019-05-31T17:03:57Z" name="validating title" finished-at="2019-05-31T17:04:08Z" duration-ms="11590">
+      <class name="Com.automationtest.validateTitle">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Com.automationtest.validateTitle@55dfcc6]" started-at="2019-05-31T10:03:57Z" name="initialize" finished-at="2019-05-31T10:04:06Z" duration-ms="9469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basepageNavigation()[pri:0, instance:Com.automationtest.validateTitle@55dfcc6]" started-at="2019-05-31T10:04:06Z" name="basepageNavigation" finished-at="2019-05-31T10:04:06Z" duration-ms="34" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<...> but was:<...123>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<...> but was:<...123>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at Com.automationtest.validateTitle.basepageNavigation(validateTitle.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepageNavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Com.automationtest.validateTitle@55dfcc6]" started-at="2019-05-31T10:04:06Z" name="teardown" finished-at="2019-05-31T10:04:08Z" duration-ms="2085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Com.automationtest.validateTitle -->
+    </test> <!-- validating title -->
+  </suite> <!-- Suite -->
+</testng-results>
